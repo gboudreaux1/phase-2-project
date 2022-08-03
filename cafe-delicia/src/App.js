@@ -34,12 +34,14 @@ function App() {
 
   const onRemove = (coffee) => {
     const exist = cartItems.find(x => x.id === coffee.id );
-    if(exist) {
-      setCartItems(cartItems.map(x => x.id === coffee.id ? {...exist, qty: exist.qty -1} : x 
-        )
-      );
+    if(exist.qty === 1) {
+      setCartItems(cartItems.filter(x => x.id !== coffee.id));
     } else{
-      setCartItems([...cartItems, {...coffee, qty:1}])
+      setCartItems(
+        cartItems.map((x) =>
+          x.id === coffee.id ? { ...exist, qty: exist.qty -1 } : x
+        )
+      )
     }
   }
 
