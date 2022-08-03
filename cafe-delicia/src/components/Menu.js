@@ -2,21 +2,22 @@ import React from 'react'
 import MenuCard from './MenuCard';
 import DisplayCart from './DisplayCart';
 
-function Menu({coffeeList, cartItems, onAdd}) {
-    console.log(cartItems)
+function Menu({coffeeList, onAdd, onRemove, cartItems}) {
+   console.log(coffeeList)
 
     const coffeeItems = coffeeList.map(coffee => {
         return <MenuCard 
         key = { coffee.id }
         coffee = { coffee }
         onAdd = { onAdd }
+        onRemove = { onRemove }
         />
     })
 
     return(
         <div>
             <h1>Menu</h1>
-            <DisplayCart onAdd = { onAdd } cartItems = { cartItems } />
+            <DisplayCart onAdd = { onAdd } onRemove = { onRemove } cartItems = { cartItems } />
             {coffeeItems}
         </div>
     )

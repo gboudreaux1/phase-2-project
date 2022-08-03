@@ -1,5 +1,5 @@
 import React from 'react'
-import MenuForm from './MenuForm'
+// import MenuForm from './MenuForm'
 
 
 function MenuCard({coffee, onAdd}) {
@@ -11,7 +11,7 @@ function MenuCard({coffee, onAdd}) {
             {/* <div className="card__content"> */}
             <div className="coffee-title">{coffee.name}</div>
             <p className="coffee-text">{coffee.description}</p>
-            <p className="coffee-price">${coffee.price}</p>
+            <p className="coffee-price">${coffee.price}0</p>
             <button onClick={() => onAdd(coffee)} type='submit'>Add To Cart</button>
         </div>
     );
