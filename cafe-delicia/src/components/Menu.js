@@ -3,7 +3,7 @@ import MenuCard from './MenuCard';
 import DisplayCart from './DisplayCart';
 
 function Menu({coffeeList, onAdd, onRemove, cartItems}) {
-   console.log(coffeeList)
+   
 
     const coffeeItems = coffeeList.map(coffee => {
         return <MenuCard 
