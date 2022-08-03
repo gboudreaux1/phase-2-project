@@ -69,6 +69,84 @@
        "price": 5.98
        
       }
-      ]
+      ],
+      "coffee beans": [
+        {
+          "id": 1,
+          "name": "5 Pound Bag",
+          "image": "https://cdn.shopify.com/s/files/1/1583/5049/products/Backstory_products_web-3-2_1024x1024.jpg?v=1659415800",
+          "price": 85.00
+        },
+        {
+          "id": 2,
+          "name": "Sample Pack",
+          "image": "https://cdn.shopify.com/s/files/1/1583/5049/products/Backstory_products_web-1_ed22f4bf-c7c8-4993-8e4d-d52b9bb00e4d_530x.jpg?v=1659416344",
+          "price": 65.00
+        },
+        {
+          "id": 3,
+          "name": "2 Pound Bag",
+          "image": "https://cdn.shopify.com/s/files/1/1583/5049/products/Backstory_products_web-2-2_1024x1024.jpg?v=1659415428",
+          "price": 42.50
+        },
+        {
+          "id": 4,
+          "name": "Kenya Gachatha Peaberry",
+          "image": "https://cdn.shopify.com/s/files/1/1583/5049/products/Backstory_products_web-12_530x.jpg?v=1659414680",
+          "price": 13.25
+        },
+         {
+         "id": 5,
+          "name": "Ethipian Shale Washsing Station",
+          "image": "https://cdn.shopify.com/s/files/1/1583/5049/products/Backstory_products_web-14_530x.jpg?v=1659414282",
+          "price": 12.25
+        },
+        {
+        "id": 6,
+         "name": "Summer Break Blend",
+         "image": "https://cdn.shopify.com/s/files/1/1583/5049/products/Backstory_products_web-5_530x.jpg?v=1659413923",
+          "price": 11.25
+        },
+        {
+        "id": 7,
+         "name": "Brazil Rio Da Cobra",
+         "image": "https://cdn.shopify.com/s/files/1/1583/5049/products/Backstory_products_web-6_530x.jpg?v=1659414485",
+         "price": 10.75
+        },
+        {
+        "id": 8,
+         "name": "Nightfall - Decaf (New)",
+         "image": "https://cdn.shopify.com/s/files/1/1583/5049/products/Backstory_Menu-5_530x.jpg?v=1659412130",
+         "price": 10.25
+    
+        },
+        {
+        "id": 9,
+         "name": "Hearthside - Oragnic Blend (New)",
+         "image": "https://cdn.shopify.com/s/files/1/1583/5049/products/Backstory_Menu-8_530x.jpg?v=1659411921",
+         "price": 10.25
+        },
+        {
+        "id": 10,
+         "name": "Legend - Blend ",
+         "image": "https://cdn.shopify.com/s/files/1/1583/5049/products/Backstory_Menu-7_530x.jpg?v=1659402425",
+         "price": 10.25
+         
+        },
+        {
+          "id": 11,
+           "name": "Wayfinder - Organic Blend (New)",
+           "image": "https://cdn.shopify.com/s/files/1/1583/5049/products/Backstory_Menu-17_530x.jpg?v=1659411730",
+           "price": 9.75
+      
+          },
+          {
+          "id": 12,
+           "name": "Narrator - Organic Blend",
+           "image": "https://cdn.shopify.com/s/files/1/1583/5049/products/Backstory_Menu-1-2_1024x1024.jpg?v=1659411064",
+           "price": 9.75
+          }
+        ]
+
   }   
 
