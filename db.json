@@ -47,26 +47,26 @@
      "name": "Espresso",
      "description": "Signature Locally Roasted, Single Origin Costa Rican Coffee",
      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb4_N0EMtuLEDEGOKWmQ-GLmCvq8-NWOithA&usqp=CAU",
-     "price": 2.99
+     "price": 2.90
     },
     {
     "id": 8,
      "name": "Croissant",
      "image": "https://www.zojirushi.com/user/images/recipe/260.1.jpg",
-     "price": 2.99
+     "price": 2.90
 
     },
     {
     "id": 9,
      "name": "Avocado Toast",
      "image": "https://weekendatthecottage.com/wp-content/uploads/2016/10/AvocadoToast5.jpg",
-     "price": 5.99
+     "price": 5.90
     },
     {
     "id": 10,
      "name": "Carrot cake ",
      "image": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Vertical-Carrot-Cake_EXPS_TOHAM22_266286_E11_11_2b.jpg",
-     "price": 5.99
+     "price": 5.90
     }
     ],
     "coffee beans": [

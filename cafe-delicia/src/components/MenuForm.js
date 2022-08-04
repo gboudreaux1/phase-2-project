@@ -2,76 +2,56 @@ import React, {useState} from 'react'
 
 
 
-function MenuForm() {
+function MenuForm({addDrinkToState}) {
 
-    const [ quantity, setQuantity ] = useState('')
-    const [ syrup, setSyrup ] = useState('')
-    const [ size, setSize ] = useState('')
-    const [ checked, setChecked ] = useState(false)
+    const [ name, setName ] = useState('')
+    const [ image, setImage ] = useState('')
+    const [ description, setDescription ] = useState('')
+    const [ price, setPrice ] = useState('')
 
 
 
-    const handleChange= (e) => {
+    const handleNameChange= (e) => {
         return(
-            setQuantity(e.target.value)
+            setName(e.target.value)
         )
     }
-    const handleChangeSyrup= (e) => {
+    const handleImageChange= (e) => {
         return(
-            setSyrup(e.target.value)
+            setImage(e.target.value)
         )
     }
-    const handleChangeSize= (e) => {
+    const handleDescriptionChange= (e) => {
         return(
-            setSize(e.target.value)
+            setDescription(e.target.value)
         )
     }
-
-    const handleCheck = (e) => {
+    const handlePriceChange= (e) => {
         return(
-            setChecked(checked => !checked)
+            setPrice(e.target.value)
         )
     }
 
     const handleSubmit= (e) => {
         e.preventDefault();
-        
+        const newDrink = {name, image, description, price}
+
+        addDrinkToState(newDrink)
 
     }
 
 
     return(
-        <div>
-            <form onSubmit= {handleSubmit}>
-                <label htmlFor='syrup'>Select Syrup:</label>
-                <select onChange = { handleChangeSyrup } >
-                    <option value="none">None</option>
-                    <option value="whitechocolate">White Chocolate</option>
-                    <option value="milkchocolate">Milk Chocolate</option>
-                    <option value="caramel">Caramel</option>
-                </select>
-                <label htmlFor='size'>Select Size:</label>
-                <select onChange = { handleChangeSize } >
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                </select>
-                <input 
-                    onChange={ handleChange } 
-                    type="number"
-                    name="price"
-                    step="1.0"
-                    placeholder="QTY"
-                    style= {{ width: '30px' }} />
-                <label htmlFor='iced'>Make iced:</label>
-                <input
-                    onChange={ handleCheck }
-                    type ="checkbox"
-                    style= {{ transform: 'scale(1)', margin: '10px' }} />
-                <button type='submit'>Add To Cart</button>
+        <div className="new-drink-form" >
+            <h2>Customize A Drink!</h2>
+            <form onSubmit = {handleSubmit}>
+            <input onChange={ handleNameChange } type="text" name="name" placeholder="Drink name" />
+            <input onChange={ handleImageChange } type="text" name="image" placeholder="Image URL" />
+            <input onChange={ handleDescriptionChange } type="text" name="description" placeholder="Description" />
+            <input onChange={ handlePriceChange } type="number" name="price" step="0.01" placeholder="Price" />
+            <button type="submit">Add Customized Drink</button>
             </form>
-    
-        </div>
+      </div>
     )
 }
 

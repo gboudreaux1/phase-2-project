@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import MenuCard from './MenuCard';
 import DisplayCart from './DisplayCart';
 import SearchBar from './SearchBar';
+import MenuForm from "./MenuForm";
 
-function Menu({coffeeList, onAdd, onRemove, cartItems}) {
+function Menu({coffeeList, onAdd, onRemove, cartItems, addDrinkToState}) {
    
     const [searchString, setSearchString] = useState ('')
  
@@ -25,11 +26,12 @@ function Menu({coffeeList, onAdd, onRemove, cartItems}) {
     })
 
     return(
-        <div>
+        <div className="wrapper">
             <h1>Menu</h1>
             <SearchBar setSearchString = {setSearchString}/>
             <DisplayCart onAdd = { onAdd } onRemove = { onRemove } cartItems = { cartItems } />
             {coffeeItems}
+            <MenuForm addDrinkToState = { addDrinkToState }/>
         </div>
     )
 }

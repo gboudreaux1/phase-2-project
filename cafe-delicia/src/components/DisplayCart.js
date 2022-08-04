@@ -10,7 +10,7 @@ function DisplayCart({cartItems, onAdd, onRemove}) {
     const totalPrice = itemsPrice + taxPrice + shippingPrice;
 
     return(
-        <div>
+        <div className="display-cart">
             <h2>Cart</h2>
             <div>{cartItems.length === 0 && <div>Cart is Empty</div>}</div>
             {cartItems.map((item) => (

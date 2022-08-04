@@ -21,6 +21,10 @@ function App() {
   const [ coffee, setCoffee ] = useState([])
   const [ cartItems, setCartItems ] = useState([])
 
+  const addDrinkToState = drink => {
+    setCoffee([drink, ...coffee])
+  }
+
   const onAdd = (coffee) => {
     const exist = cartItems.find(x => x.id === coffee.id );
     if(exist) {
@@ -56,13 +60,17 @@ function App() {
               cartItems = { cartItems }
               onAdd = { onAdd }
               onRemove = { onRemove }
+              addDrinkToState = { addDrinkToState }
               />
           </Route>
           <Route path="/">
             <Home />
           </Route>
         </Switch>
+        
     </div>
+
+ 
   );
 }
 
