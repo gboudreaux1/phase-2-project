@@ -4,7 +4,7 @@
 function SearchBar({ setSearchString}) {
     return (
       <div className="searchbar">
-        <label htmlFor="search">Search Drink:</label>
+        <i class='bx bx-search-alt' ></i>
         <input
           type="text"
           id="search"

@@ -53,11 +53,16 @@ function MenuForm({addDrinkToState}) {
         <div className="new-drink-form" >
             <h2>Customize A Drink!</h2>
             <form onSubmit = {handleSubmit}>
-            <input onChange={ handleNameChange } type="text" name="name" placeholder="Drink name" />
-            <input onChange={ handleImageChange } type="text" name="image" placeholder="Image URL" />
-            <input onChange={ handleDescriptionChange } type="text" name="description" placeholder="Description" />
-            <input onChange={ handlePriceChange } type="number" name="price" step="0.01" placeholder="Price" />
-            <button type="submit">Add Customized Drink</button>
+            <input className='nameinput' onChange={ handleNameChange } type="text" name="name" placeholder="Drink name" />
+            <input className='imageinput' onChange={ handleImageChange } type="text" name="image" placeholder="Image URL" />
+            <input className='descriptioninput' onChange={ handleDescriptionChange } type="text" name="description" placeholder="Description" />
+            <input className='priceinput' onChange={ handlePriceChange } type="number" name="price" step="0.01" placeholder="Price" />
+            <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Add Drink!</span>
+            </button>
             </form>
       </div>
     )
