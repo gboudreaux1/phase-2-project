@@ -36,7 +36,15 @@ function MenuForm({addDrinkToState}) {
         e.preventDefault();
         const newDrink = {name, image, description, price}
 
-        addDrinkToState(newDrink)
+        fetch('http://localhost:3000/coffee', {
+            method: 'POST',
+            header: { "Content-Type" : "application/json" },
+            body: JSON.stringify(newDrink)
+        }).then ( () => {
+            addDrinkToState(newDrink)
+        })
+
+        
 
     }
 
